@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="蔡坤廷的实验仪器、工程软件、编程、办公与专业证书技能。"><meta name="theme-color" content="#f6f9fc">
   <title>个人技能｜蔡坤廷</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4E79'/%3E%3Cpath d='M18 17h28v7H26v9h17v7H26v7h20v7H18z' fill='white'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F4E79'/%3E%3Cpath d='M18 17h28v7H26v9h17v7H26v7h20v7H18z' fill='white'/%3E%3C/svg%3E"><link rel="stylesheet" href="styles.css?v=4"><script src="script.js?v=3" defer></script>
 </head>
 <body class="inner-page">
   <header class="site-header"><a class="brand" href="index.html" aria-label="返回首页"><span class="brand-mark">CKT</span><span class="brand-text">蔡坤廷<br><small>PERSONAL PROFILE</small></span></a><button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="主要导航"><a href="education.html">教育</a><a href="research.html">科研</a><a href="practice.html">实践</a><a href="project-management.html">项目管理</a><a href="skills.html" aria-current="page">技能</a><a href="interests.html">兴趣</a></nav></header>
@@ -22,11 +22,19 @@
         </div>
         <section class="work-sample" aria-labelledby="video-work-title">
           <div class="work-sample-heading"><div><p class="page-kicker">VIDEO EDITING</p><h3 id="video-work-title">Premiere Pro 剪辑作品</h3></div><span>05:50 · 720p</span></div>
-          <p>使用 Adobe Premiere Pro 完成的《奥本海默》电影片段剪辑练习。网页播放版本经过压缩，可点击下方视频观看。</p>
-          <video controls playsinline preload="none" poster="assets/video/premiere-poster.jpg" width="1280" height="720" aria-label="奥本海默电影片段剪辑作品">
+          <p>使用 Adobe Premiere Pro 完成的《奥本海默》电影片段剪辑练习。可拖动下方进度条，从任意位置继续观看。</p>
+          <video class="sample-video" controls playsinline preload="metadata" poster="assets/video/premiere-poster.jpg" width="1280" height="720" tabindex="0" aria-label="奥本海默电影片段剪辑作品，点击播放或暂停">
             <source src="assets/video/premiere-edit-720p.mp4" type="video/mp4">
-            您的浏览器不支持视频播放。<a href="assets/video/premiere-edit-720p.mp4">点击打开视频文件</a>。
+            您的浏览器不支持视频播放。
           </video>
+          <div class="video-controls" aria-label="视频播放控制">
+            <button class="video-toggle" type="button" aria-label="播放视频">播放</button>
+            <input class="video-seek" type="range" min="0" max="1000" value="0" step="1" aria-label="拖动视频进度">
+            <span class="video-time" aria-live="off">0:00 / 5:50</span>
+            <button class="video-mute" type="button" aria-label="静音">静音</button>
+            <button class="video-fullscreen" type="button" aria-label="全屏播放">全屏</button>
+          </div>
+          <p class="video-error" hidden>视频暂时无法播放，请稍后再试。</p>
         </section>
         <a class="next-section" href="interests.html"><div><p>NEXT CHAPTER</p><h3>继续查看兴趣爱好</h3></div><span aria-hidden="true">→</span></a>
       </div>
