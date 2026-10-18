@@ -159,7 +159,7 @@ if (detailImage) {
   const imagePath = params.get('image') || '';
   const title = params.get('title') || '图片详情';
   const from = params.get('from') || '';
-  const allowedPages = ['education.html', 'research.html', 'practice.html', 'project-management.html', 'interests.html'];
+  const allowedPages = ['education.html', 'research.html', 'practice.html', 'project-management.html', 'skills.html', 'interests.html'];
   if (/^assets\/(photos|documents)\/[a-z0-9-]+\.(jpg|png)$/.test(imagePath)) {
     detailImage.src = imagePath;
     detailImage.alt = title;
